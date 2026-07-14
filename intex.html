@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beautiful Stopwatch</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-      <h1 id="myH1">stopwatch</h1>
+    <div class="weather-widget" id="weather">
+        <div class="weather-icon" id="w-icon">☀️</div>
+        <div class="weather-info">
+            <div class="weather-temp" id="w-temp">--°C</div>
+            <div class="weather-desc" id="w-desc">Fetching climate...</div>
+        </div>
+    </div>
 
-      <div id="container">
+    <div id="container">
+        <h1 id="myH1">Stopwatch</h1>
         <div id="display">
-            00:00:00:00
+            00:00:00<span class="milliseconds">:00</span>
         </div>
         <div id="controls">
-            <button id="startbtn" onclick="start()">start</button>
-            <button id="stopbtn" onclick="stop()">stop</button>
-            <button id="resetbtn" onclick="reset()">reset</button>
+            <button id="startbtn" onclick="start()">Start</button>
+            <button id="stopbtn" onclick="stop()">Stop</button>
+            <button id="resetbtn" onclick="reset()">Reset</button>
         </div>
-      </div>
+    </div>
 
-
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
